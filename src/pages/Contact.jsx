@@ -4,9 +4,10 @@ import Spinner from './components/Spinner';
 import { ToastContainer, toast } from 'react-toastify';
 import { BiLogInCircle } from 'react-icons/bi';
 import 'react-toastify/dist/ReactToastify.css';
+import contact_me from '../image/contact_me_img.png';
 import { useState } from 'react';
 export const Contact = (props) => {
-  const url = '';
+  const url = 'https://mern-portfolio-wesite.onrender.com';
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
     name: '',
@@ -140,7 +141,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <img
-            // src={contact_me_img}
+            src={contact_me}
             className='form_container_right'
             alt='contact images'
           ></img>
