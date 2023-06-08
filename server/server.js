@@ -1,28 +1,38 @@
 const express = require('express');
-const cors = require('cors');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const UsersMsg = require('./UserModel');
-
-require('dotenv').config({ path: './.env' });
+// const mongoDB = 'mongoDB://localhost:27017/portfolio';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
+require('dotenv').config({ path: './.env' });
+
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log('DB Connection Successfully');
+    console.log('DB Connected Successfully');
   })
   .catch((err) => {
-    console.log(err.message);
+    console.log(`DataBase not connected : ${err}`);
   });
-app.get('/', async (req, res) => {
-  res.send('Your are runnung on server ');
+
+app.get('/', (req, res) => {
+  res.send('Hello server is running without error');
 });
+
+// app.post('/', (req, res) => {
+//   res.send({
+//     name: 'Prasad',
+//     email: 'prasadsontakke@1302',
+//     message: 'Hello there',
+//   });
+// });
 
 app.post('/user-message', async (req, res) => {
   const { name, email, message } = req.body;
@@ -32,6 +42,7 @@ app.post('/user-message', async (req, res) => {
   if (!emailRegex.test(req.body.email)) {
     return res.status(400).json({ error: 'Invalid email format' });
   }
+
   console.log(user);
   const userMessage = await user.save();
 
@@ -50,5 +61,5 @@ app.get('/user-backend', async (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server Started on Port ${process.env.PORT}`);
+  console.log(`Server is running on port number : ${process.env.PORT}`);
 });
