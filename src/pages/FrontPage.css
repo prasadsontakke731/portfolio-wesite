@@ -1,5 +1,6 @@
 .btn {
   border-radius: 10px;
+  color: black;
   padding: 14px 0;
   width: 160px;
   cursor: pointer;
@@ -11,11 +12,19 @@
 .btn:active {
   transform: translateY(2px);
 }
+.name {
+  color: orange;
+  font-weight: bold;
+}
 
 .primary-btn {
-  border: 2px solid rgb(239, 138, 38);
-  font-size: 12px;
-  background-color: var(--dark-fans);
+  /* font-size: 22px; */
+  text-transform: uppercase;
+  border: 2px solid #ff9100;
+  /* color: black; */
+  background-color: black;
+  letter-spacing: 1.3px;
+  font-weight: 700;
 }
 .profile-details-name p {
   font-size: 54px;
@@ -27,14 +36,18 @@
 }
 .primary-btn:hover {
   color: rgb(20, 241, 134);
-  border: 2px solid #3b80ff;
+  border: 2px solid #ff9100;
   background-color: #1f2235;
+  color: #fdb00a;
+  box-shadow: 2px 2px 15px #fdb00a;
 }
 
 .highlighted-btn {
   color: var(--white);
   font-size: 12px;
-  background-color: #3b80ff;
+  color: rgb(251, 247, 247);
+  border: 2px solid orange;
+  background-color: #0a0a0b;
 }
 
 @media only screen and (max-width: 568px) {
@@ -86,8 +99,7 @@
   color: #d21fff;
   /* text-shadow: 0 0 6px #902cbc91; */
 }
-.profile-details-role span {
-}
+
 .colz {
   padding: 12px 0px;
 }
@@ -99,7 +111,7 @@
 
 .highlighted-text {
   text-shadow: 0 0 9px #1d1122;
-  color: #ffffff;
+  color: #ffcd05;
   margin-right: 9px;
   margin-left: 12px;
   font-weight: 600;
@@ -108,7 +120,7 @@
   font-size: 16px;
   line-height: 24px;
   margin: 5px 0 0 0;
-  color: rgb(127, 141, 170);
+  color: rgb(237, 242, 243);
   text-shadow: 0 0 9px #001339bf;
 }
 .profile-options .highlighted-btn {
@@ -116,8 +128,9 @@
 }
 .profile-options .highlighted-btn:hover {
   margin: 0 0 0 28px;
-  background-color: cornsilk;
-  color: #111;
+
+  color: #fdb00a;
+  box-shadow: 2px 2px 15px #fdb00a;
 }
 .profile-picture {
   display: flex;

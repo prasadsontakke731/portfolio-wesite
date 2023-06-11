@@ -4,10 +4,10 @@ import Spinner from './components/Spinner';
 import { ToastContainer, toast } from 'react-toastify';
 import { BiLogInCircle } from 'react-icons/bi';
 import 'react-toastify/dist/ReactToastify.css';
-import contact_me from '../image/contact_me_img.png';
+import contact_me from '../image/contact_img.png';
 import { useState } from 'react';
 export const Contact = (props) => {
-  const url = 'https://mern-portfolio-wesite.onrender.com';
+  const url = 'https://portfolio-website-uhri.onrender.com/user-message';
   const [pvalue, setPvalue] = useState(0);
   const [userMsg, setUserMsg] = useState({
     name: '',

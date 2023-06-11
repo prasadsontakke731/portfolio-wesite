@@ -34,7 +34,14 @@ h2 {
 }
 .skills_gif_container {
   width: 90%;
-  gap: 12px;
+  gap: 15px;
+}
+.skills_gif_container_box {
+  cursor: pointer;
+  border: 1px solid rgb(254, 254, 254);
+}
+.skills_gif_container_box:hover {
+  border: 1px solid orange;
 }
 .section_container_skills_gif,
 .skills_gif_container div,

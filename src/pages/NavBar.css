@@ -4,8 +4,12 @@
 }
 .nav-container,
 .logo {
+  /* background-color: #fff; */
   display: flex;
   align-items: center;
+  /* justify-content: center; */
+  /* padding-right: 10px; */
+  /* font-size: 12px; */
   align-content: center;
 }
 .nav-container {
@@ -67,11 +71,13 @@
   text-align: center;
 }
 .MenuItems a:hover {
-  color: #ff32d9 !important;
+  border: 3px solid orange;
+  color: #ffea03 !important;
+  border-radius: 9px;
 }
 .active_navbtn {
-  color: #3299ff !important;
-  text-shadow: 0 0 3px #ddfffd34;
+  color: #0077ef !important;
+  text-shadow: 0 0 3px #84e0da34;
   font-size: 18px !important;
   /* padding: 0px 6px !important; */
 }

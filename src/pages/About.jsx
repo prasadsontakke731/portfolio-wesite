@@ -14,15 +14,23 @@ export const About = () => {
             About <span>Me</span>
           </h2>
           <p>
-            I am a Developer and Designer based in Pune, India 🌍. I have always
-            been fascinated by Knowledge 🧠 and learning new things. Throughout
-            my life, I have spoken, read and written in English fluently.
-            Currently, I'm exploring Restful API's 👩🏾‍💻 as part of my skillset.
-            When not working on projects or spending time with family or
-            friends, you can usually find me watching YouTube videos 💻 or
-            listening to music 🎧. As an experienced Web developer who is
-            skilled in many areas of development 😎 (responsive design being
-            one),I would love to work with businesses both small and large!
+            My journey as a front-end developer began during my studies, where I
+            gained a solid foundation in HTML, CSS, and JavaScript. I quickly
+            fell in love with the art of crafting beautiful and functional user
+            interfaces. Through various projects and internships, I have honed
+            my skills in front-end technologies and familiarized myself with
+            industry-standard frameworks such as React . <br></br> I have a keen
+            eye for design and strive to create visually appealing websites that
+            not only capture attention but also provide a seamless user
+            experience. I believe in the power of clean, modular, and
+            maintainable code. <br /> I am always eager to learn and implement
+            the latest best practices and emerging technologies. Collaboration
+            is key in the world of web development, and I thrive in a
+            team-oriented environment. I enjoy working closely with designers,
+            UX/UI experts, and back-end developers to translate ideas into fully
+            functional websites. I value effective communication, attention to
+            detail, and a strong commitment to delivering high-quality work on
+            time.
           </p>
           <div className='personal_info'>
             {personal_info_data.map((data, index) => {
@@ -40,7 +48,7 @@ export const About = () => {
                   <div className='xyz'>
                     {data.section_two.map((e, index) => {
                       return (
-                        <h4>
+                        <h4 key={index}>
                           <span>{e.data_type} :</span> {e.data_value}
                         </h4>
                       );

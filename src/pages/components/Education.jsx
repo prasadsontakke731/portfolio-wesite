@@ -27,7 +27,7 @@ function Education() {
         },
       ],
       btn_name: 'Visit Website',
-      btn_link: 'https://dypcoeakurdi.collpoll.com/home',
+      btn_link: 'http://karmayogi.org.in/',
     },
   ];
   return (
@@ -64,7 +64,7 @@ function Education() {
                       })}
                       <div className='educ_btn'>
                         <a href={data.btn_link}>
-                          <button>{data.btn_name}</button>
+                          <button formTarget='_blank'>{data.btn_name}</button>
                         </a>
                       </div>
                     </div>

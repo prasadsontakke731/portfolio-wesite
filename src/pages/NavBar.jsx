@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import nav_logo from '../image/Profile_Images/logo_img.png';
+import nav_logo from '../image/Profile_Images/logo.ng.jpg';
 import my_navbar_data from './assets/NavData';
 import { useState } from 'react';
 import './NavBar.css';

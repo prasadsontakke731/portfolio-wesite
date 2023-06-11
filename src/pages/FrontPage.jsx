@@ -36,10 +36,12 @@ function Frontpage() {
                   </span>
                 </h1>
                 <span className='profile-role-tagline'>
-                  I make websites that are easy to use, meet the client's needs,
-                  and work well even as they grow. I pay close attention to
-                  every little thing to make sure they work fast and are
-                  reliable.
+                  Hi there! I'm <span className='name'>PRASAD</span>, a
+                  passionate and enthusiastic front-end developer with a strong
+                  desire to create engaging and user-friendly web experiences. I
+                  recently graduated with a degree in [B.Tech (Computer
+                  Science)], and I am excited to embark on a career in the
+                  ever-evolving world of web development.
                 </span>
               </span>
               <div className='colz'>

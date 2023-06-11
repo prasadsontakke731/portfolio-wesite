@@ -2,12 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const UsersMsg = require('./UserModel');
-// const mongoDB = 'mongoDB://localhost:27017/portfolio';
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+app.use(bodyParser.json());
 require('dotenv').config({ path: './.env' });
 
 mongoose

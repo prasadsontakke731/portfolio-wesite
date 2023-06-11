@@ -95,10 +95,5 @@ const my_skills_data = [
     skill_name: 'Netlify',
     img_link: netlify_logo,
   },
-  {
-    id: 19,
-    skill_name: 'Vercel',
-    img_link: vercel_logo,
-  },
 ];
 export default my_skills_data;

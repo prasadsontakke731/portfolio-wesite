@@ -27,7 +27,9 @@ function Skills() {
         <div className='section_container_skills_gif'>
           <div className='skills_gif_container'>
             {my_skill_description.map((data, index) => (
-              <div key={index}>{data.info}</div>
+              <div className='skills_gif_container_box' key={index}>
+                {data.info}
+              </div>
             ))}
           </div>
         </div>

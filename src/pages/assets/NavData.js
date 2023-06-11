@@ -14,13 +14,13 @@ const my_navbar_data = [
   {
     index: 2,
     nav_link: `/#about_myself`,
-    navbar_name: 'About Myself',
+    navbar_name: 'About Me',
     nav__icon: TfiControlForward,
   },
   {
     index: 3,
     nav_link: `/tech/#my_skill`,
-    navbar_name: 'Skills and Abilities',
+    navbar_name: 'Skills ',
     nav__icon: RiCodeSSlashLine,
     another_page: true,
   },
@@ -34,7 +34,7 @@ const my_navbar_data = [
   {
     index: 5,
     nav_link: '/#my-work',
-    navbar_name: 'Projects and Experience',
+    navbar_name: 'Projects',
     nav__icon: RxDashboard,
   },
   {
