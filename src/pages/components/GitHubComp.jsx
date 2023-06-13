@@ -1,5 +1,6 @@
 import React from 'react';
-// import './Githubcomp.css';
+
+import './GitHubComp.css';
 function Githubcomp(props) {
   return (
     <div className='bot_btn'>

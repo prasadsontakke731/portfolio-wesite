@@ -54,14 +54,17 @@ input {
   height: 45px;
   width: 95%;
   gap: 9px;
-  background: #b246f5;
-  border: 1px solid #9a24b9;
-  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #00008b;
+  border: none;
+  color: #add8e6;
+
   margin: 15px 0 15px 0;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 900;
   transition: ease-in-out 0.5s;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .submit_msg:active {
   transform: scale(0.9);
@@ -86,7 +89,7 @@ input {
   margin-bottom: 9px;
 }
 .user_message_form span {
-  color: #9a24b9;
+  color: #00008b;
   margin-left: 5px;
 }
 .user_message_form h3 {

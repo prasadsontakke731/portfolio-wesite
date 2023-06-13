@@ -17,11 +17,11 @@ function ProjHome() {
             for new projects and Ideas. You can also reach out to me on any of
             the social media channels mentioned below.
           </p>
-          {/* <Githubcomp
+          <Githubcomp
             backgroundColor='#512da8'
             shadow='0px 0px 13px rgb(255 255 255) '
             href='https://github.com/ganraj21/Portfolio-Web-Application'
-          /> */}
+          />
         </div>
         <div className='proj_right'>
           <img src={proj_img} alt='Project Img' />

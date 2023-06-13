@@ -58,6 +58,12 @@ h4 span {
   font-weight: 700;
   color: #ff5823;
 }
+.highlighted-text {
+  color: #ffcd05;
+  margin-right: 9px;
+  margin-left: 12px;
+  font-weight: 600;
+}
 .personal_info {
   width: 90%;
   justify-content: space-around;
