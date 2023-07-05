@@ -11,7 +11,7 @@ const proj_data = [
     proj_creation_date: 'feb 2023',
     project_image: portfolio_img,
     proj_code_like: 'https://github.com/prasadsontakke77/portfolio-wesite',
-    proj_live_link: 'https://effervescent-swan-71f848.netlify.app',
+    proj_live_link: 'https://prasad-sontakke.netlify.app/',
   },
   {
     id: 2,
