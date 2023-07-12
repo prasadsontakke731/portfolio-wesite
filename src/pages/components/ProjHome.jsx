@@ -14,8 +14,7 @@ function ProjHome() {
             view my activities, contributions and code on these projects. Some
             of these are completed and some are in progress. You can also leave
             comments on the profile and start a discussion. I am always looking
-            for new projects and Ideas. You can also reach out to me on any of
-            the social media channels mentioned below.
+            for new projects and Ideas.
           </p>
           <Githubcomp
             backgroundColor='#512da8'

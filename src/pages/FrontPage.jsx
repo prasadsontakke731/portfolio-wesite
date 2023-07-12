@@ -38,10 +38,10 @@ function Frontpage() {
                 <span className='profile-role-tagline'>
                   Hi there! I'm <span className='name'>PRASAD</span>, a
                   passionate and enthusiastic front-end developer with a strong
-                  desire to create engaging and user-friendly web experiences. I
-                  recently graduated with a degree in [B.Tech (Computer
-                  Science)], and I am excited to embark on a career in the
-                  ever-evolving world of web development.
+                  desire to create engaging and user-friendly web
+                  experiences.Through various projects and internships, I have
+                  honed my skills in front-end technologies and familiarized
+                  myself with industry-standard frameworks such as React
                 </span>
               </span>
               <div className='colz'>

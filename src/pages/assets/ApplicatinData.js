@@ -21,11 +21,11 @@ const my_skills_data = [
     skill_name: 'React JS',
     img_link: react_logo,
   },
-  {
-    id: 2,
-    skill_name: 'Redux',
-    img_link: redux_logo,
-  },
+  // {
+  //   id: 2,
+  //   skill_name: 'Redux',
+  //   img_link: redux_logo,
+  // },
 
   {
     id: 3,

@@ -21,17 +21,7 @@ export const About = () => {
             functional user interfaces. Through various projects and
             internships, I have honed my skills in front-end technologies and
             familiarized myself with industry-standard frameworks such as React
-            . <br></br> I have a keen eye for design and strive to create
-            visually appealing websites that not only capture attention but also
-            provide a seamless user experience. I believe in the power of clean,
-            modular, and maintainable code. <br /> I am always eager to learn
-            and implement the latest best practices and emerging technologies.
-            Collaboration is key in the world of web development, and I thrive
-            in a team-oriented environment. I enjoy working closely with
-            designers, UX/UI experts, and back-end developers to translate ideas
-            into fully functional websites. I value effective communication,
-            attention to detail, and a strong commitment to delivering
-            high-quality work on time.
+            .
           </p>
           <div className='personal_info'>
             {personal_info_data.map((data, index) => {

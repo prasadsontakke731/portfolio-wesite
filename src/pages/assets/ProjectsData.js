@@ -3,6 +3,7 @@ import portfolio_img from '../../image/proj_imgs/Screenshot (115).png';
 import calci_img from '../../image/proj_imgs/calculator_img.png';
 import ecom from '../../image/proj_imgs/e-commerse.png';
 import cinemate from '../../image/proj_imgs/cinemate.png';
+import snake from '../../image/proj_imgs/snake.png';
 
 const proj_data = [
   {
@@ -47,14 +48,14 @@ const proj_data = [
       'https://64886acc84889516c2688ddf--venerable-cendol-bab10e.netlify.app/',
   },
 
-  // {
-  //   id: 6,
-  //   project_name: 'Open Profile Card / Mini-Portfolio',
-  //   proj_creation_date: 'feb 2022',
-  //   // project_image: profile_img,
-  //   proj_code_like: 'https://github.com/ganraj21/Profile-Card',
-  //   proj_live_link: 'https://ganraj21.github.io/Profile-Card/',
-  // },
+  {
+    id: 6,
+    project_name: 'Snake game',
+    proj_creation_date: 'feb 2022',
+    project_image: snake,
+    proj_code_like: 'https://github.com/prasadsontakke77/snake-game',
+    proj_live_link: 'https://snake-game-ps.netlify.app/',
+  },
   // {
   //   id: 7,
   //   project_name: 'Quotes generatorBot',

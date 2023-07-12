@@ -7,7 +7,7 @@ import proj_data from './assets/ProjectsData';
 
 function Projects() {
   const [showAllCards, setShowAllCards] = useState(false);
-  const visibleCards = proj_data.slice(0, 5);
+  const visibleCards = proj_data.slice(0, 6);
   return (
     <div>
       <div className='work_page' id='my-work'>
@@ -95,7 +95,7 @@ function Projects() {
                   data-aos-duration='2000'
                   className='view__btn'
                 >
-                  Okey,I got it
+                  {/* Okey,I got it */}
                 </HashLink>
               </div>
             </>
@@ -108,14 +108,14 @@ function Projects() {
                 justifyContent: 'center',
               }}
             >
-              <button
+              {/* <button
                 onClick={() => setShowAllCards(true)}
                 data-aos='fade-down'
                 data-aos-duration='2000'
                 className='view__btn'
               >
-                View All
-              </button>
+                
+              </button> */}
             </div>
           )}
         </div>
