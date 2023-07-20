@@ -27,7 +27,7 @@ function Frontpage() {
                       multiText={[
                         'Frontend Development',
                         'Backend Development',
-                        'Commpetitive Programmer',
+                        "MERN Stack Developer",
                         'Open-Source ',
                       ]}
                       multiTextDelay={1000}

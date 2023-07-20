@@ -8,11 +8,11 @@ import snake from '../../image/proj_imgs/snake.png';
 const proj_data = [
   {
     id: 1,
-    project_name: 'Portfolio Website',
-    proj_creation_date: 'feb 2023',
-    project_image: portfolio_img,
-    proj_code_like: 'https://github.com/prasadsontakke77/portfolio-wesite',
-    proj_live_link: 'https://prasad-sontakke.netlify.app/',
+    project_name: 'Cinemate',
+    proj_creation_date: 'jan 2023',
+    project_image: cinemate,
+    proj_code_like: 'https://github.com/prasadsontakke77/cinemate',
+    proj_live_link: 'https://ps-cenemate.netlify.app/',
   },
   {
     id: 2,
@@ -22,13 +22,14 @@ const proj_data = [
     proj_code_like: 'https://github.com/prasadsontakke77/E-Commerce-website',
     proj_live_link: 'https://ps-e-commerse.netlify.app/',
   },
+
   {
     id: 3,
-    project_name: 'Cinemate',
-    proj_creation_date: 'jan 2023',
-    project_image: cinemate,
-    proj_code_like: 'https://github.com/prasadsontakke77/cinemate',
-    proj_live_link: 'https://ps-cenemate.netlify.app/',
+    project_name: 'Portfolio Website',
+    proj_creation_date: 'feb 2023',
+    project_image: portfolio_img,
+    proj_code_like: 'https://github.com/prasadsontakke77/portfolio-wesite',
+    proj_live_link: 'https://prasad-sontakke.netlify.app/',
   },
   {
     id: 4,
