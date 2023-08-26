@@ -9,8 +9,8 @@ const my_certificates_data = [
     cert_provider_img_link: edureka_img,
     cert_time_stamp: 'Oct 2022',
     back_grd_color: '#e0e0e0',
-    cert_pdf_link:
-      'https://drive.google.com/file/d/19UkvTFPvHNz52rKzfpU5zbCA2pGhbN-k/view',
+
+
   },
   {
     index: 2,
@@ -19,8 +19,6 @@ const my_certificates_data = [
     cert_provider_img_link: udemy_img,
     cert_time_stamp: 'Jan 2023',
     back_grd_color: '#fff176',
-    cert_pdf_link:
-      'https://www.cloudskillsboost.google/public_profiles/0c8ad9e4-1f8b-4753-8c8f-fb9719c627bf',
   },
   {
     index: 3,
@@ -29,8 +27,6 @@ const my_certificates_data = [
     cert_provider_img_link: udemy_img,
     cert_time_stamp: 'April 2023',
     back_grd_color: '#d1b7ff',
-    cert_pdf_link:
-      'https://unstop.com/certificate-preview/67c35fbb-1a5c-484c-8785-d76a994dcaee',
   },
   {
     index: 4,
@@ -39,7 +35,6 @@ const my_certificates_data = [
     cert_provider_img_link: udemy_img,
     cert_time_stamp: 'Aug 2022',
     back_grd_color: '#aaf5ff',
-    cert_pdf_link: 'https://www.sololearn.com/Certificate/CT-JSJZPXZA/jpg',
   },
   // {
   //   index: 5,
