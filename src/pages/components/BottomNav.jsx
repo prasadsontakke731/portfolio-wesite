@@ -4,6 +4,7 @@ import SocialMideaLinks from './SocialMideaLinks';
 import my_navbar_data from '../assets/NavData';
 import { HashLink } from 'react-router-hash-link';
 import personal_info_data from '../assets/Aboutln';
+import Githubcomp from './GitHubComp';
 
 function BottomNav() {
   return (
@@ -20,7 +21,7 @@ function BottomNav() {
             </p>
             <p className='f_info'>Follow me for more such Projects.</p>
           </div>
-          <div>{/* <Githubcomp href='https://github.com/ganraj21' /> */}</div>
+          <div><Githubcomp href='https://github.com/prasadsontakke77' /></div>
         </div>
         <div className='bot_nav_middle'>
           <div className='bot_middle_header'>
