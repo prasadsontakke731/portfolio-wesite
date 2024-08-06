@@ -7,7 +7,7 @@ const social_media_data = [
   {
     index: 2,
     icon_class: 'fa-brands fa-github',
-    where_to_go_link: 'https://github.com/prasadsontakke77',
+    where_to_go_link: 'https://github.com/prasadsontakke731',
   },
   {
     index: 3,

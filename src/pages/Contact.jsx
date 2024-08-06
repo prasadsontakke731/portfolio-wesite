@@ -1,73 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
-import Spinner from './components/Spinner';
+import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
-import { BiLogInCircle } from 'react-icons/bi';
 import 'react-toastify/dist/ReactToastify.css';
 import contact_me from '../image/contact_img.png';
-import { useState } from 'react';
 export const Contact = (props) => {
-  const url = 'https://portfolio-website-uhri.onrender.com/user-message';
-  const [pvalue, setPvalue] = useState(0);
-  const [userMsg, setUserMsg] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const toastOptions = {
-    position: 'top-right',
-    autoClose: 8000,
-    pauseOnHover: true,
-    theme: 'dark',
-  };
-  const handleInputs = (event) => {
-    setUserMsg({ ...userMsg, [event.target.name]: event.target.value });
-  };
-  const handleValidation = () => {
-    const { name, email, message } = userMsg;
 
-    if (message.length < 5) {
-      toast.error('Message is required', toastOptions);
-      return false;
-    } else if (name === '') {
-      toast.error('Enter your name here.', toastOptions);
-      return false;
-    } else if (name.length < 2) {
-      toast.error('Enter your full name', toastOptions);
-      return false;
-    } else if (email === '') {
-      toast.error('Email is required', toastOptions);
-      return false;
+  const form = useRef()
+  const sendEmail = (e) => {
+    e.preventDefault()
+    if (form.current.value === "") {
+      toast.error("Please enter all fields")
     }
-    return true;
-  };
-  const operator = async (e) => {
-    e.preventDefault();
-    const { name, email, message } = userMsg;
-    const requestOptions = {
-      name,
-      email,
-      message,
-    };
-    console.log(requestOptions);
-    if (handleValidation()) {
-      setPvalue(1);
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestOptions),
-      });
-      const data = await res.json();
-      if (data) {
-        setPvalue(0);
-      }
-      console.log(data);
-      toast.error(data.error, toastOptions);
-      toast.success(data.message, toastOptions);
-    }
-  };
+    emailjs.sendForm('service_6qntzjm', 'template_qmx5qm9', form.current, 'VhB17PYMsEOC2Y4W8')
+      .then((result) => {
+        console.log(result.text);
+        toast.success("Message sent to Prasad")
+        form.current.value = ""
+      },
+
+        (error) => {
+          console.log(error.text);
+          toast.error(error.text)
+        }
+
+      )
+  }
+  console.log(form.current);
   return (
     <section className='contact_page_section' id='contact_page'>
       <div className='contact_section'>
@@ -78,7 +37,8 @@ export const Contact = (props) => {
               <form
                 className='user_message_form'
                 method='POST'
-                onSubmit={operator}
+                ref={form}
+                onSubmit={sendEmail}
               >
                 <h3>
                   Get in <span> Touch </span>
@@ -88,52 +48,34 @@ export const Contact = (props) => {
                   <label htmlFor='name'>Name</label>
                   <input
                     type='text'
-                    name='name'
-                    value={userMsg.name}
-                    onChange={handleInputs}
+                    name='from_name'
+                    placeholder='enter name'
                     autoComplete='off'
+                    required
                   />
                 </div>
                 <div className='username_val'>
                   <label htmlFor='name'>Email-id</label>
                   <input
                     type='email'
-                    name='email'
-                    value={userMsg.email}
-                    onChange={handleInputs}
+                    name='from_email'
+                    placeholder='enter email'
                     autoComplete='off'
+                    required
                   />
                 </div>
                 <div className='user_msg'>
                   <label htmlFor='msg'>Message</label>
-                  <textarea
-                    type='text'
-                    name='message'
-                    id='user_text_area'
-                    cols='30'
-                    rows='6'
-                    value={userMsg.message}
-                    onChange={handleInputs}
-                  ></textarea>
+
+                  <input name='message' placeholder='enter message' required />
                 </div>
                 <div className='user_send_msg_button'>
                   <button
                     className='submit_msg'
                     id='user_msg_btn'
-                    disabled={pvalue !== 0}
-                    style={{
-                      background: pvalue !== 0 ? '#d2b3e5' : '',
-                      border: pvalue !== 0 ? '#d2b3e5' : '',
-                    }}
+
                   >
-                    {pvalue ? (
-                      <Spinner
-                        id='your_spinner_d'
-                        style={pvalue ? 'flex' : 'none'}
-                      />
-                    ) : (
-                      <BiLogInCircle />
-                    )}
+
                     Send
                   </button>
                 </div>

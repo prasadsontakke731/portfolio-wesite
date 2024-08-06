@@ -3,6 +3,8 @@ import { HashLink } from 'react-router-hash-link';
 import nav_logo from '../image/Profile_Images/logo.ng.jpg';
 import my_navbar_data from './assets/NavData';
 import { useState } from 'react';
+
+import { motion, useScroll } from "framer-motion"
 import './NavBar.css';
 
 export const NavBar = () => {
@@ -10,13 +12,16 @@ export const NavBar = () => {
   const [isbtnActive, setBtnActive] = useState(false);
   const [isBtnClick, setBtnClick] = useState(0);
 
+  const { scrollYProgress } = useScroll();
   const handleClick = () => {
     setActive(!isActive);
     setBtnActive(!isbtnActive);
   };
   return (
     <>
+      <motion.span style={{ scaleX: scrollYProgress }} className='scrollAnimation'></motion.span>
       <div className='nav-container'>
+
         <div className='logo'>
           <HashLink to='/#home_page' className='nav__logo'>
             <img src={nav_logo} height='40px' width='40px' alt='logo' />

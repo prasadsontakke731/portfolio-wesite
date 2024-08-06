@@ -10,10 +10,13 @@ import Skills from './pages/Skills';
 import Footer from './pages/Footer';
 import Projects from './pages/Projects';
 import Education_cert from './pages/Education_cert';
+import { motion, useScroll } from "framer-motion"
 
 const App = () => {
+  const { scrollYProgress } = useScroll();
   return (
-    <>
+    <div >
+      <motion.div style={{ scaleX: scrollYProgress }} className='scrollAnimation'></motion.div>
       <NavBar />
       <Routes>
         <Route
@@ -51,7 +54,7 @@ const App = () => {
           }
         />
       </Routes>
-    </>
+    </div>
   );
 };
 

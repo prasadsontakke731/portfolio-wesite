@@ -4,6 +4,7 @@
 }
 .nav-container,
 .logo {
+  z-index: 2;
   /* background-color: #fff; */
   display: flex;
   align-items: center;
@@ -11,12 +12,23 @@
   /* padding-right: 10px; */
   /* font-size: 12px; */
   align-content: center;
+  position: relative;
+}
+.scrollAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  float: inline-start;
+  height: 10px;
+  background: rgb(255, 12, 206);
 }
 .nav-container {
   flex-direction: row;
   justify-content: space-between;
   z-index: 100;
-  top: 0;
+  top: 10px;
   position: sticky;
   width: 100%;
   color: #000;

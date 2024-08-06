@@ -14,14 +14,14 @@ export const About = () => {
             About <span>Me</span>
           </h2>
           <p>
-            My journey as a front-end developer began during my studies, where I
-            gained a solid foundation in{' '}
-            <span className='highlighted-words'>HTML, CSS, and JavaScript</span>
-            . I quickly fell in love with the art of crafting beautiful and
-            functional user interfaces. Through various projects and
-            internships, I have honed my skills in front-end technologies and
-            familiarized myself with industry-standard frameworks such as React
-            .
+            Dedicated Front End Web Developer creating visually appealing and user-friendly
+            websites. Developed responsive web applications using HTML, CSS, TailwindCSS,
+            JavaScript and React JS, Implemented state management using Redux in a React.js application. with a strong foundation in responsive design and cross-browser compatibility. Optimized website performance to enhance loading speed and user experience.
+            Integrated RESTful APIs for dynamic content fetching and updates. Innovative and
+            detail-oriented Fresher Front End Developer with a passion for creating responsive
+            and user-friendly websites. Skilled in collaborating with back-end developers, utilizing version control systems, and staying up-to-date on emerging technologies. Proven
+            track record in improving website traffic, performance, and functionality through the
+            implementation of front-end coding standards and troubleshooting
           </p>
           <div className='personal_info'>
             {personal_info_data.map((data, index) => {

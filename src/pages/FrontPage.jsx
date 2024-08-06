@@ -4,6 +4,7 @@ import SvgBackground from './components/SvgBackground';
 import './FrontPage.css';
 import TypeWriterEffect from 'react-typewriter-effect';
 
+
 function Frontpage() {
   return (
     <>

@@ -5,19 +5,47 @@ import ecom from '../../image/proj_imgs/e-commerse.png';
 import cinemate from '../../image/proj_imgs/cinemate.png';
 import snake from '../../image/proj_imgs/snake.png';
 import codebook from "../../image/Screenshot (183).png"
+import bookStore from "../../image/proj_imgs/bookStore.png"
+import fooZila from "../../image/proj_imgs/fooZila.png"
+import shop from "../../image/proj_imgs/shop.png"
 
 const proj_data = [
   {
     id: 1,
+    project_name: 'Book Store',
+    proj_creation_date: 'Aug 2024',
+    project_image: bookStore,
+    proj_code_like: 'https://github.com/prasadsontakke731/Book-Store',
+    proj_live_link: 'https://ps-book.netlify.app/',
+  },
+  {
+    id: 2,
+    project_name: 'CartZilla',
+    proj_creation_date: 'May 2024',
+    project_image: fooZila,
+    proj_code_like: 'https://github.com/prasadsontakke731/cartzila-',
+    proj_live_link: 'https://ps-food-app.netlify.app/',
+  },
+  {
+    id: 3,
+    project_name: 'Shopping Cart',
+    proj_creation_date: 'Jun 2024',
+    project_image: shop,
+    proj_code_like: 'https://github.com/prasadsontakke731/shopping-cart',
+    proj_live_link: 'https://ps-shop.netlify.app/',
+  },
+  {
+    id: 1,
     project_name: 'Codebook',
-    proj_creation_date: 'Aug 2023',
+    proj_creation_date: 'April 2024',
     project_image: codebook,
     proj_code_like: 'https://github.com/prasadsontakke77/codebook',
     proj_live_link: 'https://codebook-ps.netlify.app/',
-  }, {
+  },
+  {
     id: 2,
     project_name: 'Cinemate',
-    proj_creation_date: 'jan 2023',
+    proj_creation_date: 'Feb 2024',
     project_image: cinemate,
     proj_code_like: 'https://github.com/prasadsontakke77/cinemate',
     proj_live_link: 'https://ps-cenemate.netlify.app/',
@@ -25,7 +53,7 @@ const proj_data = [
   {
     id: 3,
     project_name: 'E-Commerce ',
-    proj_creation_date: 'jun 2023',
+    proj_creation_date: 'jun 2024',
     project_image: ecom,
     proj_code_like: 'https://github.com/prasadsontakke77/E-Commerce-website',
     proj_live_link: 'https://ps-e-commerse.netlify.app/',

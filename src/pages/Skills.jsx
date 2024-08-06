@@ -1,6 +1,8 @@
 import React from 'react';
 import SData from './assets/ApplicatinData';
 import './Skills.css';
+import {motion} from "framer-motion"
+import {fadIn} from "../variants"
 function Skills() {
   const my_skill_description = [
     {
@@ -20,18 +22,24 @@ function Skills() {
     <>
       <section id='my_skill'>
         <div className='my_skills'>
-          <h2>
+          <motion.h2 variants={fadIn('down', 0.2)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}>
             My Skills <span>&</span> Abilities
-          </h2>
+          </motion.h2>
         </div>
         <div className='section_container_skills_gif'>
-          <div className='skills_gif_container'>
+          <motion.div variants={fadIn('up', 0.5)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }} className='skills_gif_container'>
             {my_skill_description.map((data, index) => (
               <div className='skills_gif_container_box' key={index}>
                 {data.info}
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
         <div className='container_s'>
           {SData.map((e, index) => (
